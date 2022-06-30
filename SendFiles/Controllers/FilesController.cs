@@ -8,6 +8,11 @@ namespace SendFiles.Controllers;
 [ApiController]
 public class FilesController : ControllerBase
 {
+    [HttpGet]
+    public ActionResult Get()
+    {
+        return Ok(new { Name = "Hello" });
+    }
 
     [HttpPost("{id:int}")]
     public ActionResult UploadImage(int id)
