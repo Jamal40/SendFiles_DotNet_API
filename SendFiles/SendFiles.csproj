@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>ddc318dc-5aaf-4a84-b5f2-bb66dcae0982</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Angular\UploadingImage\" />
     <Folder Include="Assets\Images\" />
   </ItemGroup>
 

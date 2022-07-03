@@ -1,0 +1,12 @@
+<form [formGroup]="porductForm">
+  <input type="text" placeholder="Product Name" formControlName="name" />
+  <input
+    type="file"
+    placeholder="Product Name"
+    (change)="uploadPhoto($event.target)"
+  />
+  <label>{{ uploadingStatus }}</label>
+  <button [disabled]="!isReadyToSubmit()" type="button" (click)="submit()">
+    Submit
+  </button>
+</form>
