@@ -5,13 +5,15 @@ This demo has been made to demonstrate how to submit a form that includes a phot
 
 ## Approach:
 Typically There are three ways to handle this scenario:
+
   1- Sending all the data using content-type: multipart/form-data.
+  
   2- Sending all the data using content-type: application/json and using base64 to handle images.
-  3- Sending multiple requests, one to handle the image and responds with the image URL, and the other to handle the form submission.
-The approach used in the demo is this one. 
+  
+  3- Sending multiple requests, one to handle the image using multipart/form-data and responds with the image URL, and the other to handle the form submission using application/json. The approach used in the demo is this one. 
 
 ## Flow:
-The form will be disabled until the user uploads a photo, once the photo is uploaded and the server responds with the URL, the user will be able to submit the form as long as it's valid.
+The form will be disabled until the user uploads a photo, once the photo is uploaded, a request is sent to the server and the server responds with the URL, the user will be able to submit the form as long as it's valid.
 
 ## Structure:
 FilesController: contains the central endpoint for the whole application to handle files/images. Given an image, the endpoint will return a URL.
