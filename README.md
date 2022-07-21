@@ -20,6 +20,4 @@ FilesController: contains the central endpoint for the whole application to hand
 ProductsController: contains a dummy endpoint to mimic the product with image submission.
 
 ## Authors
-Special Thanks to:
-  - [@Bassant](https://github.com/Bassanthebashi)
-  - [@Yasmeen](https://github.com/yasminomar)
+  - [@Nora](https://github.com/nora209)
